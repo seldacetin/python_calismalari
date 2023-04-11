@@ -1,1 +1,21 @@
+{% load static %}
+
 <h1>Home Page</h1>
+
+<ul>
+    {% for k in Kategori %}
+        <li>{{ k }}</li>
+    {% endfor %}
+</ul>
+
+<div id="Film">
+    {% for f in Film %}
+        {% if f.anasayfa %}
+            <div>
+                <p>{{ f.film_adi }}</p>
+                <p>{{ f.aciklama }}</p>
+                <img src="{% static 'img/'|add:f.resim %}" alt="">
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
