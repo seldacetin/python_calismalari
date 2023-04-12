@@ -1,10 +1,10 @@
 from django.db import models
 
 class Category(models.Model):
-    name = models.charField(max_length = 100)
+    name = models.CharField(max_length = 100)
 
 class Movie(models.Model):
     film_adi = models.CharField(max_length=200)
     aciklama = models.TextField()
-    resim = models.CharField(100)
+    resim = models.CharField(max_length=100)
     anasayfa = models.BooleanField(default=False)

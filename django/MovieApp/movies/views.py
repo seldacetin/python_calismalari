@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .models import Category,Movie
 
+"""
 kategoriler = ["Macera","Komedi","Bilim Kurgu"]
 filmler = [
     {
@@ -33,22 +35,24 @@ filmler = [
 
 ]
 
+"""
+
 def home(request):
     data = {
-        "Kategori" : kategoriler ,
-        "Film" : filmler
+        "Kategori" : Category.objects.all() ,
+        "Film" : Movie.objects.filter(anasayfa=True)
     }
     return render(request, "index.html", data)
 
 def movies(request):
     data = {
-        "Kategori" : kategoriler ,
-        "Film" : filmler
+        "Kategori" : Category.objects.all() ,
+        "Film" : Movie.objects.all()
     }
     return render(request, "movies.html", data)
     
 def moviedetails(request, id):
     data = {
-       "id" : id,
+       "movie" : Movie.objects.get(id=id)
     }
     return render(request, "details.html", data)
