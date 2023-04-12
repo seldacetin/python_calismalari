@@ -40,7 +40,7 @@ filmler = [
 def home(request):
     data = {
         "Kategori" : Category.objects.all() ,
-        "Film" : Movie.objects.filter(anasayfa=True)
+        "Film" : Movie.objects.all()
     }
     return render(request, "index.html", data)
 

@@ -26,12 +26,11 @@
             </div>
             <div class="col-9">
                 <div class="row">
+                    <h4 class="m">Best Movie</h4>
                     {% for f in Film %}
-                        {% if f.anasayfa %}
                             <div class="col-4">
                                 {% include 'partials/_movie.html' %}
                             </div>
-                        {% endif %}
                     {% endfor %}
                     <div class="col-8"></div>
                 </div>
