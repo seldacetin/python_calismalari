@@ -3,8 +3,8 @@
 <div class="card mb-2">
     <img src="{% static 'img/'|add:f.resim %}" class="card-img-top" alt="...">
     <div class="card-body">
-    <h5 class="card-title">{{ f.film_adi }}</h5>
-    <p class="card-text">{{ f.aciklama }}</p>
-    <a href="{% url 'details' f.id %}" class="btn btn-primary">Details</a>
+        <h5 class="card-title">{{ f.film_adi }}</h5>
+        <p class="card-text">{{ f.aciklama }}</p>
+        <a href="{% url 'details' f.id %}" class="btn btn-primary">Details</a>
     </div>
 </div>

@@ -15,27 +15,20 @@
 
     <div class="container mt-3">
         <div class="row">
-            <div class="col-3">
-                <div class="list-group">
-                    {% for k in Kategori %}
-                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            {{ k.name }}
-                        </a>
-                    {% endfor %}
-                  </div>
-            </div>
-            <div class="col-9">
+            <div class="col-12">
                 <div class="row">
+                    <p class="fw-semibold lh-sm mt-3 mb-5 fs-5">
+                        The Academy of Motion Picture Arts and Sciences Awards, or best known as the Oscar Awards, took place at the Dolby Theater in California. Jimmy Kimmel was the host of the 2023 Oscar Awards, where the most successful names and films of the cinema world were selected. “Everything Everywhere All at Once” won the Best Film Award at the ceremony, while Michelle Yeoh won the Best Actress Award and Brendan Fraser won the Best Actor Award.  
+                    </p>
                     {% for f in Film %}
-                        <div class="col-4">
+                        <div class="col-3">
                             {% include 'partials/_movie.html' %}
                         </div>
                     {% endfor %}
-                    <div class="col-8"></div>
+                    <div class="col-9"></div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 </html>

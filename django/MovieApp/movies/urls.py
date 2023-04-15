@@ -13,6 +13,4 @@ urlpatterns = [
     path("", views.home, name = "home"),
     path("movies", views.movies, name = "movies"),
     path("movies/<int:id>", views.moviedetails, name = "details"),
-
-
 ]
