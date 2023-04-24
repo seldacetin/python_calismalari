@@ -1,7 +1,7 @@
 {% load static %}
 
 <div class="card mb-2">
-    <img src="{% static 'img/'|add:f.resim %}" class="card-img-top" alt="...">
+    <img src="{% static 'img/'|add:f.resim %}" class="card-img-top" style="height: 400px; width: 300px;" alt="..." >
     <div class="card-body">
         <h5 class="card-title">{{ f.film_adi }}</h5>
         <p class="card-text">{{ f.aciklama }}</p>

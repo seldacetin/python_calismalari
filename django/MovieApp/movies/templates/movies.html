@@ -17,9 +17,11 @@
         <div class="row">
             <div class="col-12">
                 <div class="row">
+                    <img src="{% static 'img/oscar.jpeg' %}" class="rounded mx-auto d-block" style="width: 900px; height: 600px;" alt="...">
                     <p class="fw-semibold lh-sm mt-3 mb-5 fs-5">
                         The Academy of Motion Picture Arts and Sciences Awards, or best known as the Oscar Awards, took place at the Dolby Theater in California. Jimmy Kimmel was the host of the 2023 Oscar Awards, where the most successful names and films of the cinema world were selected. “Everything Everywhere All at Once” won the Best Film Award at the ceremony, while Michelle Yeoh won the Best Actress Award and Brendan Fraser won the Best Actor Award.  
                     </p>
+                    <h2 class="mb-4">Best Movie</h2>
                     {% for f in Film %}
                         <div class="col-3">
                             {% include 'partials/_movie.html' %}
