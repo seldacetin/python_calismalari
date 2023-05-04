@@ -10,5 +10,3 @@ class Movie(models.Model):
     resim = models.CharField(max_length=100)
     anasayfa = models.BooleanField(default=False)
 
-def __str__(self):
-    return f"{self.film_adi}"
